@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/home_screen.dart';
+import 'package:portfolio/screens/home_screen.dart';
 
 void main() {
   runApp(const App());
@@ -16,8 +16,11 @@ class App extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
+        fontFamily: 'CJOnlyOne', // <-- 1
+        textTheme: Theme.of(context).textTheme.apply(fontFamily: 'CJOnlyOne'),
       ),
       home: const HomeScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
