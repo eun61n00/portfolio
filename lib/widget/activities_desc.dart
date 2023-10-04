@@ -9,46 +9,47 @@ class Activities extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Padding(
-        padding: EdgeInsets.only(
-          left: MediaQuery.of(context).size.width / 20,
-          right: MediaQuery.of(context).size.width / 60,
-        ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.end,
-          children: [
-            Padding(
-              padding: EdgeInsets.only(
-                  bottom: MediaQuery.of(context).size.width / 100),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                  Text(
-                    "ACTIVITIES",
-                    style: TextStyle(
-                      fontSize: MediaQuery.of(context).size.width / 60,
-                      fontWeight: FontWeight.bold,
-                      color: CJ_RED,
-                      shadows: const <Shadow>[
-                        Shadow(
-                          offset: Offset(1, 1),
-                          blurRadius: 1.0,
-                          color: Colors.black87,
-                        ),
-                        Shadow(
-                          offset: Offset(1, 1),
-                          blurRadius: .0,
-                          color: Colors.black87,
-                        ),
-                      ],
-                    ),
+    return Padding(
+      padding: EdgeInsets.only(
+        left: MediaQuery.of(context).size.width / 20,
+        right: MediaQuery.of(context).size.width / 60,
+      ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          Padding(
+            padding: EdgeInsets.only(
+                bottom: MediaQuery.of(context).size.width / 100),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Text(
+                  "ACTIVITIES",
+                  style: TextStyle(
+                    fontSize: MediaQuery.of(context).size.width / 60,
+                    fontWeight: FontWeight.bold,
+                    color: CJ_RED,
+                    shadows: const <Shadow>[
+                      Shadow(
+                        offset: Offset(1, 1),
+                        blurRadius: 1.0,
+                        color: Colors.black87,
+                      ),
+                      Shadow(
+                        offset: Offset(1, 1),
+                        blurRadius: .0,
+                        color: Colors.black87,
+                      ),
+                    ],
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
-            Padding(
+          ),
+          Container(
+            width: MediaQuery.of(context).size.width / 3.5,
+            child: Padding(
               padding: EdgeInsets.all(MediaQuery.of(context).size.width / 90),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -70,8 +71,8 @@ class Activities extends StatelessWidget {
                 ],
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

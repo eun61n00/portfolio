@@ -21,36 +21,34 @@ class DescriptionCard extends StatelessWidget {
       padding: EdgeInsets.all(width / 80),
       child: Container(
         width: width / 3,
-        child: Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding: EdgeInsets.only(bottom: width / 100),
-                child: Text(title,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: EdgeInsets.only(bottom: width / 100),
+              child: Text(title,
+                  style: TextStyle(
+                    fontSize: width / 70,
+                    fontWeight: FontWeight.bold,
+                  )),
+            ),
+            desc == null
+                ? Container()
+                : Text(
+                    desc!,
                     style: TextStyle(
-                      fontSize: width / 70,
-                      fontWeight: FontWeight.bold,
-                    )),
-              ),
-              desc == null
-                  ? Container()
-                  : Text(
-                      desc!,
-                      style: TextStyle(
-                        fontSize: width / 90,
-                        height: 1.5,
-                      ),
+                      fontSize: width / 90,
+                      height: 1.5,
                     ),
-              image_dir != null
-                  ? Image.asset(
-                      image_dir!,
-                      height: height / 10,
-                      width: image_size != null ? image_size : null,
-                    )
-                  : Container(),
-            ],
-          ),
+                  ),
+            image_dir != null
+                ? Image.asset(
+                    image_dir!,
+                    height: height / 10,
+                    width: image_size != null ? image_size : null,
+                  )
+                : Container(),
+          ],
         ),
       ),
     );

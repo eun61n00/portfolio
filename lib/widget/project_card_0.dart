@@ -24,57 +24,55 @@ class ProjectCard extends StatelessWidget {
         ),
         child: Padding(
           padding: EdgeInsets.all(width / 40),
-          child: Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  children: [
-                    const Keyword(
-                      keyword: "Project 0",
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  const Keyword(
+                    keyword: "Project 0",
+                  ),
+                  Text(
+                    "AI 졸업사진 생성 어플리케이션 개발",
+                    style: TextStyle(
+                      fontSize: width / 50,
                     ),
-                    Text(
-                      "AI 졸업사진 생성 어플리케이션 개발",
-                      style: TextStyle(
-                        fontSize: width / 50,
+                  )
+                ],
+              ),
+              Row(
+                children: [
+                  Column(
+                    children: [
+                      const DescriptionCard(
+                        title: "Introduction",
+                        desc:
+                            "23.07 – 23.09 / 팀프로젝트\nDreamBooth 모델을 사용하여 사용자의 얼굴을 학습하여\n졸업사진을 생성해주는 어플리케이션",
                       ),
-                    )
-                  ],
-                ),
-                Row(
-                  children: [
-                    Column(
-                      children: [
-                        const DescriptionCard(
-                          title: "Introduction",
-                          desc:
-                              "23.07 – 23.09 / 팀프로젝트\nDreamBooth 모델을 사용하여 사용자의 얼굴을 학습하여\n졸업사진을 생성해주는 어플리케이션",
-                        ),
-                        SizedBox(height: height / 30),
-                        const DescriptionCard(
-                          title: "Role",
-                          desc:
-                              "Flutter 프레임워크를 사용하여 프론트엔드 개발\nDjango 프레임워크를 사용하여 백엔드 개발\nDocker 컨테이너를 사용하여 배포",
-                        ),
-                        SizedBox(height: height / 30),
-                        const DescriptionCard(
-                          title: "Skill",
-                          image_dir: "assets/images/project1_skill.png",
-                        ),
-                      ],
-                    ),
-                    Image.asset(
-                      "assets/images/project1_0.png",
-                      width: width / 5,
-                    ),
-                    Image.asset(
-                      "assets/images/project1_1.png",
-                      width: width / 5,
-                    ),
-                  ],
-                ),
-              ],
-            ),
+                      SizedBox(height: height / 30),
+                      const DescriptionCard(
+                        title: "Role",
+                        desc:
+                            "Flutter 프레임워크를 사용하여 프론트엔드 개발\nDjango 프레임워크를 사용하여 백엔드 개발\nDocker 컨테이너를 사용하여 배포",
+                      ),
+                      SizedBox(height: height / 30),
+                      const DescriptionCard(
+                        title: "Skill",
+                        image_dir: "assets/images/project1_skill.png",
+                      ),
+                    ],
+                  ),
+                  Image.asset(
+                    "assets/images/project1_0.png",
+                    width: width / 5,
+                  ),
+                  Image.asset(
+                    "assets/images/project1_1.png",
+                    width: width / 5,
+                  ),
+                ],
+              ),
+            ],
           ),
         ));
   }

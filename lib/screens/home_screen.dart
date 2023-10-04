@@ -74,7 +74,7 @@ class HomeScreen extends StatelessWidget {
                   const ActivityButton(textLable: "Activities"),
                 ],
               ),
-              Expanded(
+              Container(
                 child: Image.asset(
                   "assets/images/main.png",
                   width: MediaQuery.of(context).size.width / 2,
