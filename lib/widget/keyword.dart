@@ -17,7 +17,7 @@ class Keyword extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.all(width / 100),
       child: Container(
-        height: height_fixed != null ? height_fixed : height / 15,
+        height: height_fixed != null ? height_fixed : width / 25,
         width: width_fixed != null ? width_fixed : width / 8,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(100),

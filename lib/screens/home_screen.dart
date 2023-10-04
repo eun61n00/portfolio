@@ -143,7 +143,7 @@ class ProjectButton extends StatelessWidget {
         Icons.arrow_forward_rounded,
         size: 20.0,
       ),
-      label: Text(textLable, style: TextStyle(fontSize: width / 80)),
+      label: Text(textLable, style: TextStyle(fontSize: 20.0)),
       style: TextButton.styleFrom(
         foregroundColor: Colors.white,
         backgroundColor: Colors.white.withOpacity(0.2),
@@ -177,7 +177,7 @@ class ValueButton extends StatelessWidget {
         Icons.arrow_forward_rounded,
         size: 20.0,
       ),
-      label: Text(textLable, style: TextStyle(fontSize: width / 80)),
+      label: Text(textLable, style: TextStyle(fontSize: 20.0)),
       style: TextButton.styleFrom(
         foregroundColor: Colors.white,
         backgroundColor: Colors.white.withOpacity(0.2),
@@ -212,7 +212,7 @@ class ActivityButton extends StatelessWidget {
         Icons.arrow_forward_rounded,
         size: 20.0,
       ),
-      label: Text(textLable, style: TextStyle(fontSize: width / 80)),
+      label: Text(textLable, style: TextStyle(fontSize: 20.0)),
       style: TextButton.styleFrom(
         foregroundColor: Colors.white,
         backgroundColor: Colors.white.withOpacity(0.2),
