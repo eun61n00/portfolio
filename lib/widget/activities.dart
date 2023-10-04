@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/effect/glass_morphism.dart';
 import 'package:portfolio/widget/activity_card_0.dart';
+import 'package:portfolio/widget/activity_card_1.dart';
+import 'package:portfolio/widget/activity_card_2.dart';
 import 'package:portfolio/widget/project_card_0.dart';
 import 'package:portfolio/widget/project_card_1.dart';
 import 'package:portfolio/widget/project_card_2.dart';
@@ -28,7 +30,13 @@ class ActivityGlassMorphismCard extends StatelessWidget {
                     horizontal: width / 20,
                     vertical: width / 40,
                   ),
-                  child: ActivityCard0(width: width, height: height),
+                  child: Column(
+                    children: [
+                      ActivityCard0(width: width, height: height),
+                      ActivityCard1(width: width, height: height),
+                      ActivityCard2(width: width, height: height),
+                    ],
+                  ),
                 ),
               ],
             ),
